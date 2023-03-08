@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  subconverter: 
+    image: tindy2013/subconverter:latest
+    hostname: subconverter
+    volumes:
+      - ./subconverter/all_base.tpl:/base/base/all_base.tpl
+      - ./subconverter/pref.toml:/base/pref.toml
+    ports:
+      - "25500:25500"
+
+  clash-aio:
+    build: .
+    container_name: clash-aio
+    depends_on:
+      - subconverter
+    env_file:
+      - .env
+    ports:
+      - "7890:7890"
+      - "9090:9090"
