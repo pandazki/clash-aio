@@ -13,4 +13,3 @@ RUN wget -O /tmp/yacd.tar.xz ${YACD_DOWNLOAD_URL} \
 COPY preprocess.sh /usr/bin/preprocess.sh
 
 ENTRYPOINT [ "/usr/bin/preprocess.sh" ]
-# ENTRYPOINT [ "sh" ]
