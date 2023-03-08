@@ -1,14 +1,15 @@
 # ALL-IN-ONE clash server
 
 ## Features
-- auto update clash config
-- zero config
+- auto update clash subscription(base on clash proxy-providers)
 - docker compose on-line deploy
+- embed control panel
+- zero config
 
 ## Usage
 ```bash
 cp .env.example .env
-# set RAW_SUB_ULR="your clash subscription url"
+# set RAW_SUB_URL="your clash subscription url"
 
 docker compose up -d 
 

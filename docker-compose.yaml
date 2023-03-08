@@ -3,15 +3,16 @@ services:
   subconverter: 
     image: tindy2013/subconverter:latest
     hostname: subconverter
+    container_name: subconverter
     volumes:
       - ./subconverter/all_base.tpl:/base/base/all_base.tpl
       - ./subconverter/pref.toml:/base/pref.toml
     ports:
       - "25500:25500"
 
-  clash-aio:
+  clash-with-ui:
     build: .
-    container_name: clash-aio
+    container_name: clash-with-ui
     depends_on:
       - subconverter
     env_file:
