@@ -9,13 +9,14 @@
 ## Usage
 ```bash
 cp .env.example .env
+
 # set RAW_SUB_URL="your clash subscription url"
 
 docker compose up -d 
 
 # view control panel: http://[server-ip]:9090/ui?hostname=[server-ip]
-# or set proxy to http://[server-ip]:7890 / socks5://[server-ip]:7891
-# export https_proxy=http://[server-ip]:7890;export http_proxy=http://[server-ip]:7890;export all_proxy=socks5://[server-ip]:7891
+# set proxy to http(s)://[server-ip]:7890 / socks5://[server-ip]:7890
+# export https_proxy=http://[server-ip]:7890;export http_proxy=http://[server-ip]:7890;export all_proxy=socks5://[server-ip]:7890
 ```
 
 ## Dependencies
