@@ -19,9 +19,18 @@ Clash 懒人全家桶是一个基于 Docker Compose 的 Clash 一键部署方案
 
 ## 使用方法
 
+0. 克隆代码
+
+```bash
+git clone https://github.com/pandazki/clash-aio.git
+# 如果遇到困难的话
+# git clone https://ghproxy.com/https://github.com/pandazki/clash-aio.git
+```
+
 1. 在 .env 文件中设置 Clash 订阅 URL
 
 ```bash
+cd clash-aio
 cp .env.example .env
 # 在 .env 文件中设置 RAW_SUB_URL="你自己的 Clash 订阅"
 ```
