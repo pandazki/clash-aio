@@ -17,10 +17,16 @@ Personal usage scenarios:
 - Embedded YACD web control panel
 
 ## Usage
+0. Clone this repo
+
+```bash
+git clone https://github.com/pandazki/clash-aio.git
+```
 
 1. Set your clash subscription url in `.env` file
 
 ```bash
+cd clash-aio
 cp .env.example .env
 # Set RAW_SUB_URL="your clash subscription url" in .env
 ```
