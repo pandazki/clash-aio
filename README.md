@@ -60,3 +60,7 @@ export all_proxy=socks5://[server-ip]:7890
 - Why emmbedded web control panel?
 
   In many usage scenarios, there are no conditions to use a public control panel (such as [yacd.haishan.me](http://yacd.haishan.me/)) to manage Clash.If conditions permit, you can still use your own management tool.
+
+- What should I do if I fail to build the project because I can't access Dockerhub / Github on the server?
+
+  This project in itself exists for engineering purposes, and as a project contributor, I cannot provide dependencies that can be used in various complex internal and external network environments. I suggest that you fork this project and modify the Dockerfile and docker-compose yourself, pointing the dependencies to an accessible image source.

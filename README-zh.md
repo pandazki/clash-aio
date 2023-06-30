@@ -64,3 +64,7 @@ export all_proxy=socks5://[服务器IP]:7890
 - 为什么内置 Web 控制台？
 
   在许多使用场景中，并没有条件使用公网的控制平台（比如 [yacd.haishan.me](http://yacd.haishan.me/)）来管理 Clash。如果条件允许，你依旧可以使用自己的管理工具来控制 Clash。
+
+- 我在服务器上无法访问 Dockerhub / Github，项目构建失败怎么办？
+
+  本身该项目是为了工程存在的，作为项目贡献者我无法提供在各种复杂内外网环境均可使用依赖。建议你 Fork 该项目，并在自行修改 Dockerfile 和 docker-compose，将依赖指向可以访问的镜像源。
