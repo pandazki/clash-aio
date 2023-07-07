@@ -19,4 +19,4 @@ services:
       - .env
     ports:
       - "$ALL_PROXY_PORT:7890"
-      - "$COMTROL_PANEL_PORT:9090"
+      - "$CONTROL_PANEL_PORT:9090"
