@@ -18,5 +18,5 @@ services:
     env_file:
       - .env
     ports:
-      - "7890:7890"
-      - "9090:9090"
+      - "$ALL_PROXY_PORT:7890"
+      - "$COMTROL_PANEL_PORT:9090"
