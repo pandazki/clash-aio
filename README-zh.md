@@ -27,12 +27,21 @@ git clone https://github.com/pandazki/clash-aio.git
 # git clone https://ghproxy.com/https://github.com/pandazki/clash-aio.git
 ```
 
-1. 在 .env 文件中设置 Clash 订阅 URL
+1. 在 .env 文件中设置 Clash 订阅 URL或者直接把 Clash 文件路径映射进容器
 
 ```bash
 cd clash-aio
 cp .env.example .env
 # 在 .env 文件中设置 RAW_SUB_URL="你自己的 Clash 订阅"
+```
+
+或者
+
+```docker-compose
+...
+    volumes:
+      - /path/to/your/config.yaml:/root/.config/clash/config.yaml
+...
 ```
 
 2. 运行 docker-compose

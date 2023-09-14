@@ -23,12 +23,21 @@ Personal usage scenarios:
 git clone https://github.com/pandazki/clash-aio.git
 ```
 
-1. Set your clash subscription url in `.env` file
+1. Set your clash subscription url in `.env` file or mount your config file to `/root/.config/clash/config.yaml`
 
 ```bash
 cd clash-aio
 cp .env.example .env
 # Set RAW_SUB_URL="your clash subscription url" in .env
+```
+
+or
+
+```docker-compose
+...
+    volumes:
+      - /path/to/your/config.yaml:/root/.config/clash/config.yaml
+...
 ```
 
 2. Run docker-compose
